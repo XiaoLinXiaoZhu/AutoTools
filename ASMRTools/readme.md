@@ -9,7 +9,7 @@
 
 ## 使用说明  
 
-1. 安装`AutoTool_DownloadASMR.user.js`,你可以选择手动安装也可以去油猴下载：<>
+1. 安装`AutoTool_DownloadASMR.user.js`,你可以选择手动安装也可以去油猴下载：<https://greasyfork.org/zh-CN/scripts/484096-autotool-downloadasmr>
 2. 打开 `asmr.xlsx` ，点击里面的网址即可开始下载，配合js脚本会自动开始下载（在此期间请不要进行其他操作）
 3. 使用解压软件解压，这里建议解压的时候选择：解压到单独的文件夹，这样的话文件名即为RJ号，方便之后批量进行中文命名
 
