@@ -17,7 +17,7 @@
 >   
 > 如果你想将文件的名字变为**RJ号+中文译名**  
 > 4. 运行`getFolderName.bat`,之后会多出一个list.txt  
-> 5. 将list.txt中的文本粘贴到asmrFolderName.xlsx的JR号一栏，然后复制后面的全部ren XXX XXX的指令  
+> 5. 将list.txt中的文本粘贴到asmrFolderName.xlsx的RJ号一栏，然后复制后面的全部ren XXX XXX的指令  
 > 6. 在你的存放 RJXXXXX 的文件夹下打开终端，将指令复制进去就ok了（有可能会报错，这是因为部分中文翻译的字符会出bug的缘故）
 >   
 > 如果你想要将文件的名字变为**RJ号+子目录名称**（<---------如果你看得懂日文建议这个）  
