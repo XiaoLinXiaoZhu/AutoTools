@@ -1,14 +1,16 @@
 // ==UserScript==
-// @name         AutoTool
-// @namespace    https://github.com/XiaoLinXiaoZhu/AutoTool
+// @name         AutoTool_DownloadASMR
+// @namespace    https://github.com/XiaoLinXiaoZhu/AutoTools/tree/main/ASMRTools
 // @version      0.1
-// @description  XLXZ'a AutoTool
+// @description  XLXZ's AutoTool_DownloadASMR
 // @author       XLXZ
 // @match        https://www.asmrgay.com/*
 // @match        https://cczhhz.asmr.icu/*
 // @grant        none
 // @require
 // @license      MIT
+// @downloadURL https://update.greasyfork.org/scripts/484096/AutoTool_DownloadASMR.user.js
+// @updateURL https://update.greasyfork.org/scripts/484096/AutoTool_DownloadASMR.meta.js
 // ==/UserScript==
 
 
@@ -26,7 +28,7 @@ window.onload=function(){
 function getEndingNumber(str) {
     // 正则表达式匹配结尾的1到3位数字
     var match = str.match(/\d{1,3}$/);
-    
+
     // 如果找到匹配项，则返回数字部分
     return match ? parseInt(match[0], 10) : null;
   }
@@ -124,16 +126,16 @@ setTimeout(function() {
                 window.open(js, '_blank');
                 //window.location.href = js;
                 //console.log(js);
-                
+
                 console.log("尝试打开下一页面");
                 tryNextUrl();
             }
         }
       }
 
-      // 设置每2000毫秒（即2秒）执行一次checkBoolValue函数
-      var intervalId = setInterval(checkButton, 2000);
-}, 5000); // 延迟3秒（3000毫秒）
+      // 设置每1500毫秒（即1.5秒）执行一次checkBoolValue函数
+      var intervalId = setInterval(checkButton, 1500);
+}, 2000); // 延迟2秒（2000毫秒）
 
 
 setTimeout(function() {
@@ -147,8 +149,8 @@ setTimeout(function() {
             clearInterval(intervalId); // 停止定时器
         }
         if (shutdown == 1) {
-            alert("关闭页面……")
             window.open("about:blank", "_top").close();
+            alert("关闭页面……")
             clearInterval(intervalId); // 防止继续无谓的检查，一旦条件满足就停止定时器
         } else {
           console.log("shutdown == 0");
@@ -157,5 +159,5 @@ setTimeout(function() {
 
       // 设置每2000毫秒（即2秒）执行一次checkBoolValue函数
       var intervalId = setInterval(checkBoolValue, 2000);
-}, 20000); // 延迟20秒（3000毫秒）
+}, 18000); // 延迟18秒
 
